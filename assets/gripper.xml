@@ -1,0 +1,42 @@
+<mujoco model="L31K-GRIPPER_URDF_SIMPLIFIED_V2">
+  <compiler angle="radian" autolimits="true" meshdir="mesh/robotiq"//>
+  <statistic meansize="0.06308" extent="0.196769" center="1.09192e-05 -1.22407e-06 0.0656877"/>
+  <asset>
+    <mesh name="GRIPPER_FRAME" file="GRIPPER_FRAME.STL"/>
+    <mesh name="RIGHT_FINGER_PROX" file="RIGHT_FINGER_PROX.STL"/>
+    <mesh name="RIGHT_FINGER_DIST" file="RIGHT_FINGER_DIST.STL"/>
+    <mesh name="LEFT_FINGER_PROX" file="LEFT_FINGER_PROX.STL"/>
+    <mesh name="LEFT_FINGER_DIST" file="LEFT_FINGER_DIST.STL"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" mesh="GRIPPER_FRAME"/>
+    <body name="RIGHT_FINGER_PROX" pos="0 -0.030501 0.070003" quat="0.707105 0 0.707108 0">
+      <inertial pos="0.020257 0.0063483 6.991e-05" quat="0.598941 0.598941 0.375858 0.375858" mass="0.018385" diaginertia="5.25068e-06 4.77e-06 1.59932e-06"/>
+      <joint name="RIGHT_BOTTOM" pos="0 0 0" axis="0 0 1" range="-0.09 0.96"/>
+      <geom type="mesh" mesh="RIGHT_FINGER_PROX"/>
+      <body name="RIGHT_FINGER_DIST" pos="-0.045636 0.020423 0">
+        <inertial pos="0.018488 0.0011091 0" quat="0.557345 0.557345 0.435162 0.435162" mass="0.010748" diaginertia="1.91e-06 1.61e-06 5.5e-07"/>
+        <joint name="RIGHT_TIP" pos="0 0 0" axis="0 0 1" range="-1.03 0.21"/>
+        <geom type="mesh" mesh="RIGHT_FINGER_DIST"/>
+      </body>
+    </body>
+    <body name="LEFT_FINGER_PROX" pos="0 0.0305 0.070003" quat="0.707105 0 0.707108 0">
+      <inertial pos="0.020257 0.0063483 6.99e-05" quat="0.598941 0.598941 0.375858 0.375858" mass="0.018385" diaginertia="5.25068e-06 4.77e-06 1.59932e-06"/>
+      <joint name="LEFT_BOTTOM" pos="0 0 0" axis="0 0 1" range="-0.96 0.09"/>
+      <geom type="mesh" mesh="LEFT_FINGER_PROX"/>
+      <body name="LEFT_FINGER_DIST" pos="-0.045636 -0.020423 6.9901e-05">
+        <inertial pos="-0.018488 0.0011091 0" quat="0.557345 0.557345 0.435162 0.435162" mass="0.010748" diaginertia="1.91e-06 1.61e-06 5.5e-07"/>
+        <joint name="LEFT_TIP" pos="0 0 0" axis="0 0 -1" range="-0.21 1.03"/>
+        <geom type="mesh" mesh="LEFT_FINGER_DIST"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <motor name="RIGHT_BOTTOM" gear="40" joint="RIGHT_BOTTOM"/>
+    <motor name="RIGHT_TIP" gear="40" joint="RIGHT_TIP"/>
+    <motor name="LEFT_BOTTOM" gear="40" joint="LEFT_BOTTOM"/>
+    <motor name="LEFT_TIP" gear="40" joint="LEFT_TIP"/>
+  </actuator>
+
+</mujoco>
