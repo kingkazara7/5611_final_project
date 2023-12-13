@@ -6,7 +6,7 @@ In the algorithm part, we used a sim-to-real strategy, which trains a control po
 
 ### Difficulties
 During training, the target will randomly generate within Kinova reachable workspace. Therefore, we limit the target spawn location based on the manipulator workspace settings. As shown in the figure, this is the workspace for kinova arm, to make the target location only be spawned in the space, we brute force to use for loop to rotate each joint in the simulation environment and record every time end-effector’s location.
-![image]()
+
 
 
 ### Sketch of the project:  
