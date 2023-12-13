@@ -12,12 +12,12 @@ Our reward function combines two components:
 - Distance Reward: A positive reward proportional to the reduction in distance between the goal and the end-effector.
 - Complexity Penalty: A negative reward proportional to the complexity of the motor actions taken.
 Therefore, we need to find optimal reward function parameter before start our training pipeline.
+
 Here are two bad example of reward function parameter.
 1. smaller penalty rate for distance.  
 ![reward_tuning(distance penalty)](https://github.com/kingkazara7/5611_final_project/assets/114500333/f3ecd855-1a9b-4041-ba39-e59c4ef62fe3)
 2. smaller penalty rate for action.    
 ![out](https://github.com/kingkazara7/5611_final_project/assets/114500333/8b929380-aa6d-4e83-8a1f-2131c3fdc14c)
-
 
 
 ### Sketch of the project:  
