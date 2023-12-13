@@ -5,5 +5,6 @@ difficulties(not sure yet)
 sketch of the project:  
 ![image](https://github.com/kingkazara7/5611_final_project/assets/150294493/1c52e821-29d9-4d5b-b07d-fb590d58e477)
 
-The feedback we get from some of our peers is most positive; lots of them are not familiar with Mujoco and Deep learning, but they show us some related robot movement links for reference.  
-We mainly creat custom Mujoco environments for training robot arms with deep learning algorithms. In future work, we might extend this project for multiple arms collaboration to pass the red ball. This might achieved by setting the void "red ball: for arm1, and after arm1 moves to the destination with the red ball, arm2 two would grab the red ball to the new destination for the ball in sequence.  
+The feedback we get from some of our peers is most positive; many are unfamiliar with Mujoco and Deep learning, but they show us some related robot movement links for reference.  
+Inspired by the paper on the reinforcement learning-based reactive obstacle avoidance method for redundant manipulators and open ai Mujoco-py, we created custom Mujoco environments for training robot arms with deep-learning algorithms. Our work provides a robot arm and a gazebo (a ROS simulation environment) training in simpler procedures and absorbing basic ideas of robot arm movements in the class.  
+In future work, we might extend this project for multiple arms collaboration to pass the red ball. This might achieved by setting the void "red ball: for arm1, and after arm1 moves to the destination with the red ball, arm2 two would grab the red ball to the new destination for the ball in sequence.  
