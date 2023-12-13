@@ -8,6 +8,16 @@ In the algorithm part, we used a sim-to-real strategy, which trains a control po
 During training, the target will randomly generate within Kinova reachable workspace. Therefore, we limit the target spawn location based on the manipulator workspace settings. As shown in the figure, this is the workspace for kinova arm, to make the target location only be spawned in the space, we brute force to use for loop to rotate each joint in the simulation environment and record every time end-effector’s location.
 ![image](https://github.com/kingkazara7/5611_final_project/assets/150294493/e188a544-a028-448d-9c60-184bc9799b44)
 
+Our reward function combines two components:
+- Distance Reward: A positive reward proportional to the reduction in distance between the goal and the end-effector.
+- Complexity Penalty: A negative reward proportional to the complexity of the motor actions taken.
+Therefore, we need to find optimal reward function parameter before start our training pipeline.
+Here are two bad example of reward function parameter.
+1. smaller penalty rate for distance.
+![reward_tuning(distance penalty)](https://github.com/kingkazara7/5611_final_project/assets/114500333/f3ecd855-1a9b-4041-ba39-e59c4ef62fe3)
+2. smaller penalty rate for action
+![out](https://github.com/kingkazara7/5611_final_project/assets/114500333/8b929380-aa6d-4e83-8a1f-2131c3fdc14c)
+
 
 
 ### Sketch of the project:  
