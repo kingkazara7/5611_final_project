@@ -23,9 +23,6 @@ Here are two bad example of reward function parameter.
 ### Sketch of the project:  
 ![image](https://github.com/kingkazara7/5611_final_project/assets/150294493/1c52e821-29d9-4d5b-b07d-fb590d58e477)
 
-<p align="center">
-  <src="[https://picsum.photos/460/300](https://github.com/kingkazara7/5611_final_project/assets/150294493/1c52e821-29d9-4d5b-b07d-fb590d58e477)">
-</p>
 
 ### Feedback
 The feedback we get from some of our peers is most positive; many are unfamiliar with Mujoco and Deep learning, but they show us some related robot movement links for reference.  
