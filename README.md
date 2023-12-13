@@ -24,7 +24,7 @@ Here are two bad example of reward function parameter.
 ![image](https://github.com/kingkazara7/5611_final_project/assets/150294493/1c52e821-29d9-4d5b-b07d-fb590d58e477)
 
 <p align="center">
-  <img width="460" height="300" src="[https://picsum.photos/460/300](https://github.com/kingkazara7/5611_final_project/assets/150294493/1c52e821-29d9-4d5b-b07d-fb590d58e477)">
+  <src="[https://picsum.photos/460/300](https://github.com/kingkazara7/5611_final_project/assets/150294493/1c52e821-29d9-4d5b-b07d-fb590d58e477)">
 </p>
 
 ### Feedback
